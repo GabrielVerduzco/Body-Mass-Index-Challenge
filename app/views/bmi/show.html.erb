@@ -1,7 +1,8 @@
 <p> Your mass <%=  @bmi.mass  %><p>
-    <p> Your Height <%=  @bmi.height  %></p>
-    <p> Your bmi <%=  @bmi.bmi  %></p>
-    <p> Your category <%=  @bmi.category  %></p>
-    <% unless @bmi.user.nil? %>
-    <p>You are <%=  @bmi.user.email  %></p>
-    <% end %>
+<p> Your Height <%=  @bmi.height  %></p>
+<p> Your bmi <%=  @bmi.bmi  %></p>
+<p> Your category <%=  @bmi.category  %></p>
+<% unless @bmi.user.nil? %>
+<p>This belongs to <%=  @bmi.user.email  %></p>
+<% end %>
+<%= link_to "Edit!", edit_bmi_path(@bmi) %>

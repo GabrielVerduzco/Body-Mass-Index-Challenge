@@ -1,16 +1,26 @@
- <%= form_for(@bmi, url:bmi_index_path) do |f| %>
+<% if current_user.bmi == nil %>
+<%= form_for(@bmi, url:bmi_index_path) do |f| %>
 
-<div class="container">
+<div class="container form">
+  <h2>BMI</h2>
+  <br>
   <div>
+    <label >Mass</label>
     <%= f.text_field :mass, placeholder:"Mass", class: "form-control" %>
   </div>
 
   <div>
+    <label>Height</label>
     <%= f.text_field :height, placeholder:"Height", class: "form-control" %>
   </div>
+  <br>
   <div>
-    <%= f.submit "Get your category", class: "btn btn-primary btn-lg btn-block"     %>
+    <%= f.submit "Get your category and BMI", class: "btn btn-primary btn-lg btn-block"     %>
   </div>
 
 </div>
 <%end%>
+<%else%>
+<p>You hava an BMI</p>
+<%end%>
+

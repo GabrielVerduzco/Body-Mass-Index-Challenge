@@ -2,6 +2,7 @@ class BmiController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   before_action :set_bmi, except: [:index, :new, :create]
 
+
   def index
     @bmi = Bmi.all
   end
@@ -11,6 +12,13 @@ class BmiController < ApplicationController
   end
 
   def show
+  end
+
+  def update
+  end
+
+
+  def edit
   end
 
   def create
@@ -23,6 +31,7 @@ class BmiController < ApplicationController
     else
       render :new
     end
+
   end
 
   private
@@ -39,9 +48,6 @@ class BmiController < ApplicationController
     @height = bmi_param[:height].to_f
     @mass = bmi_param[:mass].to_f
     @bmi.bmi  =  ((@mass)/(@height**2)).round(2)
-
-
-    binding.pry
     body_category
   end
 
@@ -65,4 +71,5 @@ class BmiController < ApplicationController
       @bmi.category  = 'Obese Class III (Very severely obese)'
     end
   end
+
 end
