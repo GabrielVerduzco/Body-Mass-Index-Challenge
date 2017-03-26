@@ -1,0 +1,16 @@
+ <%= form_for(@bmi, url:bmi_index_path) do |f| %>
+
+<div class="container">
+  <div>
+    <%= f.text_field :mass, placeholder:"Mass", class: "form-control" %>
+  </div>
+
+  <div>
+    <%= f.text_field :height, placeholder:"Height", class: "form-control" %>
+  </div>
+  <div>
+    <%= f.submit "Get your category", class: "btn btn-primary btn-lg btn-block"     %>
+  </div>
+
+</div>
+<%end%>

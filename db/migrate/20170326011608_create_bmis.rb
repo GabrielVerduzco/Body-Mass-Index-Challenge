@@ -4,6 +4,7 @@ class CreateBmis < ActiveRecord::Migration[5.0]
       t.string :mass
       t.string :height
       t.string :category
+      t.string :bmi
       t.integer :user_id
 
 
