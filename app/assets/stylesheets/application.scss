@@ -16,10 +16,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.form {
-      	width: 30%;
-      	margin: 10% auto;
-      	padding: 2%;
-      	background: #fafafa;
-      	border: 1px solid #ebebeb;
-      }
+.form
+{
+  width: 30%;
+  margin: 10% auto;
+  padding: 2%;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+}
+
+.center
+{
+  margin-left: 18%;
+}
