@@ -1,0 +1,9 @@
+<%  if user_signed_in?  %>
+
+<h1>Hi! <%= current_user.email%>, now you can get your body mass index </h1>
+
+<%else%>
+<h1>You need to sign up for body mass index</h1>
+<%end%>
+
+
