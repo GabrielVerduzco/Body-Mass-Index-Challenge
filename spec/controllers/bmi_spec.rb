@@ -10,6 +10,10 @@ RSpec.describe BmiController, type: :controller do
 
     end
   end
-  end
+  #it "renders 'index' template" do
+    #expect(response).to render_template('index')
+  #end
+
+end
 
 
