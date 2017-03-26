@@ -46,7 +46,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
-
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group  :test do
