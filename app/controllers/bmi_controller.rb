@@ -15,6 +15,13 @@ class BmiController < ApplicationController
   end
 
   def update
+    body_mass
+    if @bmi.update_attributes(bmi_param)
+
+      redirect_to @bmi
+    else
+      render :edit
+    end
   end
 
 
