@@ -49,10 +49,11 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'rails-controller-testing'
   gem 'sqlite3'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'capybara'
 end
 
 group  :test do
-  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do

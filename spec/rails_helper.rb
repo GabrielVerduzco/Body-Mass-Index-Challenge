@@ -5,6 +5,8 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'support/factory_girl'
+require 'features/login_spec'
 #require 'support/factory_girl'
 # Add additional requires below this line. Rails is not loaded until this point!
 #require 'capybara/rails'
@@ -76,6 +78,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-  #config.include Login
+  config.include Login
 end
 
