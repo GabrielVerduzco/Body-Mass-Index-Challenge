@@ -1,4 +1,4 @@
-require 'support/factory_girl'
+#require 'support/factory_girl'
 
 FactoryGirl.define do
   factory :user, class: User do

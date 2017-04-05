@@ -16,16 +16,16 @@ RSpec.describe BmiController, type: :controller do
 end
 
 
-RSpec.feature "add a body mass index" do
+#RSpec.feature "add a body mass index" do
 
-  let(:user) { FactoryGirl.create(:user) }
+  #let(:user) { FactoryGirl.create(:user) }
 
-  scenario "get category" do
-    login_user(user)
-    visit new_bmi_path
-    fill_in "bmi_mass", with: "90"
-    fill_in "bmi_height", with: "10"
-    click_on("Get your category and BMI")
-    expect(page).to have_content("Very severely underweight")
-  end
-end
+  #scenario "get category" do
+    #login_user(user)
+    #visit new_bmi_path
+    #fill_in "bmi_mass", with: "90"
+    #fill_in "bmi_height", with: "10"
+    #click_on("Get your category and BMI")
+    #expect(page).to have_content("Very severely underweight")
+  #end
+#end
